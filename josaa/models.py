@@ -8,6 +8,7 @@ class programm(models.Model):
     open = models.FloatField(default=1)
     close = models.FloatField(default=99999)
     year = models.FloatField(default=2020)
+    roundd =models.IntegerField(default=1)
 
 
 

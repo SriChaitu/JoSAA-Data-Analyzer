@@ -3,7 +3,7 @@ import csv
 
 
 def run():
-    with open('2.csv') as file:
+    with open('data.csv') as file:
         reader = csv.reader(file)
         next(reader)
         programm.objects.all().delete()
@@ -16,5 +16,6 @@ def run():
                         open=row[5],
                         close=row[6],
                         year=row[7],
+                        roundd=row[8]
                         )
             p.save()

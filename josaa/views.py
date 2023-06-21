@@ -21,14 +21,16 @@ def rank_analyser(request):
 def display(request):
   rankk = float(request.POST.get("rank"))
   yearr = float(request.POST.get("year"))
+  rounddd = float(request.POST.get("roundd"))
   cate = str(request.POST.get("category"))
   gend = str(request.POST.get("gender"))
   context={
-    'ps': programm.objects.all(),
+    'ps': programm.objects.all().order_by('open'),
     'rank1': rankk,
     'cate1': cate,
     'gend1': gend,
-    'year1': yearr
+    'year1': yearr,
+    'roundd1':rounddd
   }
   
   return render(request,'display.html',context)
