@@ -73,14 +73,13 @@ Follow these steps to set up JoSAA-Data-Analyzer locally:
 
 6. Access the application:
 
-   Open a web browser and go to `http://localhost:8000` to access the JoSAA-Data-Analyzer application locally.
+   Open a web browser and go to `http://localhost:8000` to access the JoSAA-Data-Analyzer locally.
 
 ## Usage
 
-- Register a new user account or log in with existing credentials.
 - Browse the available programs and institutes.
 - Use the provided filters to narrow down the cutoff ranks based on criteria like institute, program, seat type, and more.
-- View the cutoff ranks in the form of interactive line charts or bar graphs.
+- View the cutoff ranks in the form of interactive line charts.
 - Compare cutoff ranks across multiple years and institutes.
 
 
